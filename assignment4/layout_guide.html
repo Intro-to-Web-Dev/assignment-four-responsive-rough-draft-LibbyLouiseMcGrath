@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Libby McGrath-->
+
+<head>
+
+    <title>Desktop Guide</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="plants">
+    <meta name="keywords" content="plants care guide">
+    <meta name="author" content="Libby McGrath">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            background-color: pink;
+        }
+
+        h1 {
+            color: white;
+            /* padding-left: 430px; */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        main {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: 2;
+        }
+
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: 4;
+            padding-top: 0px;
+        }
+
+        img {
+            display: block;
+            width: 18%;
+            align-content: flex-start;
+        }
+
+        #flexcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-image: url(img/background1.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+
+        #flexcontainer aside {
+            flex-basis: 300px;
+            height: 1000px;
+            padding: 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 8%;
+            margin-left: 0;
+            background-color: white;
+            opacity: 60%;
+        }
+
+        #information {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            background-color: white;
+            opacity: 60%;
+        }
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            color: white;
+            background-color: pink;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- <header> -->
+            <a href="layout_homepage.html"><img id="plant" src="img/logo.jpg" alt="Logo"></a>
+            <h1 id="guideTitle">Beginners Guide to House Plants</h1>
+        <!-- </header> -->
+
+        <main id="flexcontainer">
+            <aside>
+                <a href="layout_homepage.html"><h2>About</h2></a>
+
+                <a href="layout_guide.html"><h2>Guide</h2></a>
+
+                <a href="layout_plants.html"><h2>Plants</h2></a>
+            </aside>
+
+            <div id="information">
+                <p>This is a guide for beginner plant owners.
+                    Under "plants" are more detailed and specific care tips and tricks for plants I recommend for
+                    beginners.
+                    Here are some general things to remember before bringing any plant home;
+
+                    <ul>
+                        <h3>Light</h3>
+                        <li>Keep in mind what kind of light your space gets-which way do your windows face?</li>
+                        <li>North facing windows usually have the weakest light and for the shortest amount of time.
+                            Only low light plants will like north-facing windows.</li>
+                        <li>East facing windows have late morning sun, a bit more intense than north-facing, but still
+                            not intense. low-medium light plants.</li>
+                        <li>South facing windows have bright, intense sun, good for high-light plants and some
+                            medium-light plants.</li>
+                        <li>West facing windows have afternoon sun, which is bright and intense. Good for bright-light
+                            loving plants. </li>
+                    </ul>
+
+                    <ul>
+                        <h3>Humidity</h3>
+                        <li>Some plants that like humidity can do well with just being misted daily, or purchasing a
+                            humidifier, others require a lot of humidity and may not do well in houses where
+                            temperatures and humidity fluctuate-like a house heated with radiators. </li>
+                    </ul>
+
+                    <ul>
+                        <h3>Water</h3>
+                        <li>The two most common house plant mistakes are overwatering and underwatering.</li>
+                        <li>It is easy to get overzealous with a watering can when you first take a plant home.</li>
+                        <li>Always make sure to do your own research on the plant you are bringing home, because every
+                            plant requires a different amount of water.</li>
+                        <li>The amount of sun and the level of humidity in your house will affect the amount of water
+                            required as well.</li>
+
+                    </ul>
+
+                    <ul>
+                        <h3>Soil</h3>
+                        <li>Most plants can adapt to a regular potting soil, but will not thrive.</li>
+                        <li>A lot more goes into soil than you'd think.</li>
+                        <li>As a rule of thumb- most succulents like a sandier soil, tropical plants like an airy, well
+                            draining soil, and evergreen plants can handle all types.</li>
+                        <li>No matter the plant, I always recommend a good mixture of a few things; dirt, perilite,
+                            orchid bark. More perilite for cacti and succulents, more orchid bark for tropicals and more
+                            perilite for evergreen plants.</li>
+                    </ul>
+
+                    <ul>
+                        <h3>Pests!</h3>
+                        <li>One of my biggest tips and something I do right away, is to check for pests before you buy a
+                            plant!</li>
+                        <li>You never want to bring pests into your home, especially if you have other plants that could
+                            get infected.</li>
+                    </ul>
+
+                    <ul>
+                        <h3>Toxcicity!</h3>
+                        <li>Unfortunatley, many house plants are toxic to both pets and humans.</li>
+                        <li>Always do your research on this if you have kids or pets in your home.</li>
+
+                    </ul>
+            </div>
+        </main>
+        <footer>
+            <div id="copyright"> &#169; 2020 Libby McGrath lmcg1501@gmail.com</div>
+        </footer>
+    </div>
+</body>
+
+</html>

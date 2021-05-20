@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Libby McGrath-->
+
+<head>
+
+    <title>Desktop Plants</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="plants">
+    <meta name="keywords" content="plants care guide">
+    <meta name="author" content="Libby McGrath">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            background-color: pink;
+        }
+
+        h1 {
+            color: white;
+            /* padding-left: 430px; */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        main {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: 2;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: 4;
+            padding-top: 0px;
+        }
+
+        img {
+            display: block;
+            width: 18%;
+            align-content: flex-start;
+        }
+
+        #flexcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            background-image: url(img/background1.jpg);
+            background-position: center;
+            background-size: 100%;
+        }
+
+        #flexcontainer aside {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 300px;
+            height: 1500px;
+            padding: 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 8%;
+            margin-left: 0;
+            background-color: white;
+            opacity: 60%;
+        }
+
+        #information {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+        }
+
+        #copyright {
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            color: white;
+            background-color: pink;
+            padding-top: 50px;
+        }
+
+        #information img {
+            width: 40%;
+            height: 50%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- <header> -->
+            <a href="layout_homepage.html"><img id="plant" src="img/logo.jpg" alt="Logo"></a>
+            <h1 id="plantTitle">House Plants for Beginners</h1>
+        <!-- </header> -->
+        <main id="flexcontainer">
+            <aside>
+                <a href="layout_homepage.html">
+                    <h2>About</h2>
+                </a>
+
+                <a href="layout_guide.html">
+                    <h2>Guide</h2>
+                </a>
+
+                <a href="layout_plants.html">
+                    <h2>Plants</h2>
+                </a>
+            </aside>
+
+            <div id="information">
+                <a class="plantPics" href="layout_aloe.html"><img id='aloe' src="img/aloe.jpg" alt="aloe"></a>
+                <img  class="plantPics" src="img/pothos.jpg" alt="pothos">
+                <img  class="plantPics" src="img/monstera.jpg" alt="monstera">
+        
+            </div>
+        </main>
+        <footer id='sticky'>
+            <div id="copyright"> &#169; 2020 Libby McGrath lmcg1501@gmail.com</div>
+        </footer>
+    </div>
+</body>
+
+</html>
